@@ -160,8 +160,8 @@ angular.module("com.2fdevs.videogular.plugins.controls")
                     scope.fullscreenIcon = {enter: !isFullScreen, exit: isFullScreen};
                 };
 
-                scope.onClickFullScreen = function onClickFullScreen() {
-                    API.toggleFullScreen();
+                scope.onClickFullScreen = function onClickFullScreen(el) {
+                    API.toggleFullScreen(el);
                 };
 
                 scope.fullscreenIcon = {enter: true};
