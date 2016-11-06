@@ -505,6 +505,15 @@ angular.module("com.2fdevs.videogular.plugins.controls")
                         scope.onUpdateTime(newVal);
                     }
                 );
+
+                scope.$watch(
+                    function () {
+                        return API.totalTime;
+                    },
+                    function () {
+                        scope.onUpdateTime(API.currentTime);
+                    }
+                );
             }
         }
     }]
