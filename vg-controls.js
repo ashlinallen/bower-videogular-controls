@@ -46,8 +46,6 @@ angular.module("com.2fdevs.videogular.plugins.controls", [])
                 vgAutohideTime: "=?"
             },
             link: function (scope, elem, attr, API) {
-                var w = 0;
-                var h = 0;
                 var autoHideTime = 2000;
                 var hideInterval;
 
